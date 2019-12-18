@@ -3,6 +3,7 @@ package com.example.wordgame;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.room.Database;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -37,7 +38,7 @@ public class DisplayStudentActivity extends AppCompatActivity {
         btnBackToAddStudents.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(DisplayStudentActivity.this, MainActivity.class);
+                Intent intent = new Intent(DisplayStudentActivity.this, DatabaseActivity.class);
                 startActivity(intent);
             }
         });
